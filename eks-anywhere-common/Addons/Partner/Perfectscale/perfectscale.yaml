@@ -3,7 +3,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: perfectscale
-  namespace: eks-anywhere
+  namespace: perfectscale
 spec:
   chart:
     spec:
@@ -15,17 +15,11 @@ spec:
         namespace: flux-system
       version: v0.0.38
   interval: 1m0s
-  targetNamespace: eks-anywhere
+  targetNamespace: perfectscale
   values:
     secret:
       create:
         true
-#test
-    settings:
-      psUrl: "https://api.dev.perfectscale.click/psc-tenant-manager"
-      uploadPolicyUrl: "https://api.dev.perfectscale.click/psc-presigned-policy"
-      clusterUID: "eks-anywhere"
-#test
   valuesFrom:
   - kind: Secret
     name: perfectscale-sm-secret
