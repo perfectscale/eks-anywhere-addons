@@ -22,10 +22,10 @@ spec:
         true
   valuesFrom:
   - kind: Secret
-    name: perfectscale-external-secret
+    name: perfectscale-secret
     valuesKey: clientId
     targetPath: secret.clientId
   - kind: Secret
-    name: perfectscale-external-secret
-    valuesKey: kclientSecret
+    name: perfectscale-secret
+    valuesKey: clientSecret
     targetPath: secret.clientSecret   
