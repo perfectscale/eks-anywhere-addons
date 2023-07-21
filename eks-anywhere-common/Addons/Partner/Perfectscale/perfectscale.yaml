@@ -20,6 +20,9 @@ spec:
     secret:
       create:
         true
+    settings:
+      psUrl: "https://api.dev.perfectscale.click/psc-tenant-manager"
+      uploadPolicyUrl: "https://api.dev.perfectscale.click/psc-presigned-policy"
   valuesFrom:
   - kind: Secret
     name: perfectscale-sm-secret
