@@ -20,9 +20,12 @@ spec:
     secret:
       create:
         true
+#test
     settings:
       psUrl: "https://api.dev.perfectscale.click/psc-tenant-manager"
       uploadPolicyUrl: "https://api.dev.perfectscale.click/psc-presigned-policy"
+      clusterUID: "eks-anywhere"
+#test
   valuesFrom:
   - kind: Secret
     name: perfectscale-sm-secret
