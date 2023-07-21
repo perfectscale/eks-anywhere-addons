@@ -7,12 +7,13 @@ metadata:
 spec:
   chart:
     spec:
-      chart: exporter
+      chart: perfectscale/exporter
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
         name: perfectscale-charts
         namespace: flux-system
+      version: 0.0.38
   interval: 1m0s
   targetNamespace: eks-anywhere
   values:

@@ -6,5 +6,4 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30s
-  url: https://perfectscale-io.github.io/perfectscale
-
+  url: https://perfectscale-io.github.io
