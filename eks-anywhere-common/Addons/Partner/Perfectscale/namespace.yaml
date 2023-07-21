@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-    name: eks-anywhere
-    labels:
-        aws.conformance.vendor: perfectscale
-        aws.conformance.vendor-solution: perfectscale
+  name: eks-anywhere
+  labels:
+    aws.conformance.vendor: perfectscale
+    aws.conformance.vendor-solution: perfectscale
